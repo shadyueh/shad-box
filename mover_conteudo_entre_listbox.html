@@ -1,65 +1,85 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Movendo itens de um list para o outro</title>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/jquery.moveListSelected.js"></script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <title>Exemplo de plugin JS</title>
 </head>
 
 <body>
+<div class="container">
+    <form name="combo_box">
 
-<form name="combo_box">
-    <table>
-        <tr>
-            <td>
-                <select multiple size="10" id="list1" style="width:150">
-                <option value="1">Acre</option>
-                <option value="2">Alagoas</option>
-                <option value="3">Amapá</option>
-                <option value="4">Amazonas</option>
-                <option value="5">Bahia</option>
-                <option value="6">Ceará</option>
-                <option value="7">Distrito Federal</option>
-                <option value="8">Espírito Santo</option>
-                <option value="9">Goiás</option>
-                <option value="10">Maranhão</option>
-                <option value="11">Mato Grosso</option>
-                <option value="12">Mato Grosso do Sul</option>
-                <option value="13">Minas Gerais</option>
-                <option value="14">Pará</option>
-                <option value="15">Paraíba</option>
-                <option value="16">Paraná</option>
-                <option value="17">Pernambuco</option>
-                <option value="18">Piauí</option>
-                <option value="19">Rio de Janeiro</option>
-                <option value="20">Rio Grande do Norte</option>
-                <option value="21">Rio Grande do Sul</option>
-                <option value="22">Rondônia</option>
-                <option value="23">Roraima</option>
-                <option value="24">Santa Catarina</option>
-                <option value="25">São Paulo</option>
-                <option value="26">Sergipe</option>
-                <option value="27">Tocantins</option>
+        <div class="row form-group">
+            <div class="col-md-4">
+                <select multiple size="10" class="form-control" id="list1">
+                    <option value="1">Acre</option>
+                    <option value="2">Alagoas</option>
+                    <option value="3">AmapÃ¡</option>
+                    <option value="4">Amazonas</option>
+                    <option value="5">Bahia</option>
+                    <option value="6">CearÃ¡</option>
+                    <option value="7">Distrito Federal</option>
+                    <option value="8">EspÃ­rito Santo</option>
+                    <option value="9">GoiÃ¡s</option>
+                    <option value="10">MaranhÃ£o</option>
+                    <option value="11">Mato Grosso</option>
+                    <option value="12">Mato Grosso do Sul</option>
+                    <option value="13">Minas Gerais</option>
+                    <option value="14">ParÃ¡</option>
+                    <option value="15">ParaÃ­ba</option>
+                    <option value="16">ParanÃ¡</option>
+                    <option value="17">Pernambuco</option>
+                    <option value="18">PiauÃ­</option>
+                    <option value="19">Rio de Janeiro</option>
+                    <option value="20">Rio Grande do Norte</option>
+                    <option value="21">Rio Grande do Sul</option>
+                    <option value="22">RondÃ´nia</option>
+                    <option value="23">Roraima</option>
+                    <option value="24">Santa Catarina</option>
+                    <option value="25">SÃ£o Paulo</option>
+                    <option value="26">Sergipe</option>
+                    <option value="27">Tocantins</option>
                 </select>
-            </td>
-            <td valign="middle">
-            <input type="button" id="remove" value="<<">
-            <input type="button" id="move" value=">>">
-            </td>
-            <td>
-                <select multiple size="10" id="list2" style="width:150">
-                </select>
-            </td>
-        </tr>
-    </table>
-</form>
+            </div>
+            <div class="col-md-1 center">
+                <button type="button" class="btn btn-primary mb-2" id="move">&gt;&gt;</button>
+                <button type="button" class="btn btn-primary mb-2" id="remove">&lt;&lt;</button>
+            </div>
+            <div class="col-md-4">
+                <select multiple size="10" class="form-control" id="list2"></select>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+        integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.moveSelectedList.js"></script>
 
 <script type="text/javascript">
-
-	$('#move').click(function() {
-		$("#list1").moveListSelected("#list2");
-	});
+    $('#move').click(function () {
+        $("#list1").moveSelectedList("#list2");
+    });
+    $('#remove').click(function () {
+        $("#list2").moveSelectedList("#list1");
+    });
 </script>
 
 </body>
