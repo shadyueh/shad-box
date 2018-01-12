@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Meu teste de SVG</h1>
+
+<style>
+
+    @keyframes gira {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .seta {
+        fill: #ff0600;
+        animation: gira 8s linear infinite;
+        transform-origin: 43px 40px;
+    }
+</style>
+
+<svg>
+    <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(0,255,255);stroke-width:10"/>
+</svg>
+
+<svg>
+    <rect width="200" height="100" style="fill:#ff0600;stroke-width:5"/>
+</svg>
+
+<svg>
+    <circle cx="50" cy="50" r="40" fill="#F90" stroke="black" stroke-width="5"/>
+</svg>
+
+<svg>
+    <polygon fill="green" stroke="orange" stroke-width="10" points="150,15 179,101 269,101 197,155 223,241 150,190 77,241 103,155 31,101 121,101" ></polygon>
+</svg>
+
+<svg>
+    <path class="seta"
+          d="m10,0c1.48-0.037,2.71,1.14,2.75,2.62,0,0,0.086,3.73,0.078,3.82l0.274,11,4.71-0.116-7.06,13-7.69-12.6,4.71-0.116-0.271-11c-0.012-0.09-0.109-3.82-0.109-3.82-0.037-1.48,1.14-2.71,2.62-2.75"/>
+</svg>
+
+<svg>
+    <text x="0" y="34" style="font-family: Helvetica,Arial,sans-serif;font-weight:bold;font-size:34; fill :#000; ">webdesigntuts+</text>
+</svg>
+
+<svg>
+    <path id="path2" d="M160.143,196c0,0,62.777-28.033,90-17.143c71.428,28.572,73.952-25.987,84.286-21.428" style="fill:none;stroke:2;"></path>
+</svg>
+
+<svg>
+    <defs>
+        <path id="path1" d="M160.143,196c0,0,62.777-28.033,90-17.143c71.428,28.572,73.952-25.987,84.286-21.428"></path>
+    </defs>
+    <text x="0" y="34" fill="black" style="font-family: Helvetica,Arial,sans-serif;font-weight:bold;font-size:22px; fill :#000; ">
+        <textPath xlink:href="#path1">webdesigntuts+</textPath>
+    </text>
+</svg>
+
+</body>
+</html>
