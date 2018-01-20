@@ -1,0 +1,31 @@
+{
+  "name": "shad-box",
+  "version": "0.0.1",
+  "dependencies": {},
+  "description": "shad-box\r ========",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shadyueh/shad-box.git"
+  },
+  "keywords": [
+    "samples",
+    "html",
+    "css",
+    "js",
+    "svg"
+  ],
+  "author": "Held Grijo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shadyueh/shad-box/issues"
+  },
+  "homepage": "https://github.com/shadyueh/shad-box#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1"
+  }
+}
