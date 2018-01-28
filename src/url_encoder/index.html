@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="">
+    <input type="text" id="inputURL" value="https://mozilla.org/?x=%D1%88%D0%B5%D0%BB%D0%BB%D1%8B">
+    <input type="button" id="decode" value="Decode">
+    <input type="button" id="encode" value="Encode">
+</form>
+<div id="output"></div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    var decodedURL = "";
+
+    document.getElementById("decode").addEventListener("click", function () {
+        decodedURL = decodeURI(document.getElementById("inputURL").value);
+        document.getElementById("output").innerHTML = decodedURL;
+    });
+
+// jQuery version
+//    $('#decode').on('click',function () {
+//        decodedURL = decodeURI($('#inputURL').val());
+//        $('#output').html(decodedURL);
+//    });
+
+    document.getElementById("encode").addEventListener("click", function () {
+        decodedURL = encodeURI(document.getElementById("inputURL").value);
+        document.getElementById("output").innerHTML = decodedURL;
+    });
+
+//    jQuery version
+//    $('#encode').on('click',function () {
+//        decodedURL = encodeURI($('#inputURL').val());
+//        $('#output').html(decodedURL);
+//    });
+</script>
+</body>
+</html>
