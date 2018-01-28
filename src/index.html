@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Material+Icons" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Material+Icons" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">-->
+    <link rel="stylesheet"
+          href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css"
+          integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
     <title>Exemplos</title>
+    <style>
+        * {
+            font-family: "Lato", sans-serif;
+        }
+
+        .bg-teal {
+            background-color: #049f8a;
+        }
+
+        .bd-title {
+            margin-top: 1rem;
+            margin-bottom: .5rem;
+            font-weight: 300;
+        }
+    </style>
 </head>
 <body>
-<h1>Exemplos</h1>
-<ul>
-    <li><a href="readonly-selectbox">caixa de seleção apenas leitura</a></li>
-    <li><a href="move-between-selectbox">mover conteúdo entre caixas de seleção</a></li>
-    <li><a href="svg">svg</a></li>
-    <li><a href="color-scrollbar">barra de rolagem colorida</a></li>
-</ul>
 
+<div id="navbar"></div>
+
+<div class="container">
+
+    <h1 class="bd-title">Exemplos</h1>
+    <ul id="links">
+        <li><a href="readonly-selectbox">caixa de seleção apenas leitura</a></li>
+        <li><a href="move-between-selectbox">mover conteúdo entre caixas de seleção</a></li>
+        <li><a href="svg">svg</a></li>
+        <li><a href="color-scrollbar">barra de rolagem colorida</a></li>
+    </ul>
+
+    <div id="content"></div>
+
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/js/bootstrap-material-design.js"
+        integrity="sha384-3xciOSDAlaXneEmyOo0ME/2grfpqzhhTcM4cE32Ce9+8DW/04AGoTACzQpphYGYe"
+        crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $('body').bootstrapMaterialDesign();
+        $("#navbar").load("navbar.html");
+
+    });
+
+</script>
 </body>
 </html>
