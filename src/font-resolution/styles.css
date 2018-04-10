@@ -1,0 +1,12 @@
+body{
+    background-color: #444444;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time{
+    color: #FFFFFF;
+    font:  25em/0.8em "Open Sans",sans-serif;
+}
