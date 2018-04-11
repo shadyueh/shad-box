@@ -1,0 +1,30 @@
+/*@import url('https://fonts.googleapis.com/css?family=Arsenal');*/
+/*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Material+Icons');*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Material+Icons');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons');*/
+
+  * {
+    font-family: "Lato", sans-serif;
+}
+
+.bg-teal {
+    background-color: #049f8a;
+}
+
+.bd-title {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-weight: 300;
+}
+
+
+.btn.aqua-gradient {
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    color: #fff;
+}
+
+.aqua-gradient {
+    background: -webkit-linear-gradient(50deg,#2096ff,#05ffa3)!important;
+    background: linear-gradient(40deg,#2096ff,#05ffa3)!important;
+}
